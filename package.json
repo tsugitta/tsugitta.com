@@ -1,6 +1,8 @@
 {
   "name": "tsugitta-corporate",
   "version": "0.0.0",
+  "author": "tsugitta",
+  "description": "the answer of 'who is tsugitta?'",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -10,7 +12,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "^4.0.0",
     "@angular/common": "^4.0.0",
