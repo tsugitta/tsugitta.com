@@ -20,7 +20,8 @@
     "import-spacing": true,
     "indent": [
       true,
-      "spaces"
+      "spaces",
+      2
     ],
     "interface-over-type-literal": true,
     "label-position": true,
@@ -80,7 +81,19 @@
     ],
     "radix": true,
     "semicolon": [
+      true,
       "always"
+    ],
+    "space-in-parens": [
+      true,
+      "always"
+    ],
+    "trailing-comma": [
+      true,
+      {
+        "multiline": "always",
+        "singleline": "never"
+      }
     ],
     "triple-equals": [
       true,
@@ -104,8 +117,11 @@
       "check-branch",
       "check-decl",
       "check-operator",
+      "check-module",
       "check-separator",
-      "check-type"
+      "check-type",
+      "check-typecast",
+      "check-preblock"
     ],
     "directive-selector": [
       true,
