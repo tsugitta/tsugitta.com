@@ -19,7 +19,8 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.less"
+        "styles.less",
+        "../node_modules/sanitize.css/sanitize.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
