@@ -38,18 +38,13 @@
     "no-arg": true,
     "no-bitwise": true,
     "no-console": [
-      true,
-      "debug",
-      "info",
-      "time",
-      "timeEnd",
-      "trace"
+      false
     ],
     "no-construct": true,
     "no-debugger": true,
     "no-duplicate-super": true,
     "no-empty": false,
-    "no-empty-interface": true,
+    "no-empty-interface": false,
     "no-eval": true,
     "no-inferrable-types": [
       true,

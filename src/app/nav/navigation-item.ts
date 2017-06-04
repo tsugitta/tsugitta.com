@@ -11,12 +11,12 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
     materialIconName: 'person',
   },
   {
-    displayName: `Contributions`,
+    displayName: `Contributions (WIP)`,
     path: 'contributions',
     materialIconName: 'timeline',
   },
   {
-    displayName: `Diary`,
+    displayName: `Diary (WIP)`,
     path: 'diaries',
     materialIconName: 'music_note',
   },

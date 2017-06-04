@@ -1,19 +1,20 @@
-import { Component } from '@angular/core';
-import { Router, ActivatedRoute } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.less'],
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   constructor(
-    private route: ActivatedRoute,
-    private router: Router,
   ) { }
 
   public get isRoot(): boolean {
-    return this.router.url === '/';
+    // Router's url isn't resolved just after visited, so use window.location.pathname
+    return window.location.pathname === '/';
+  }
+
+  ngOnInit() {
   }
 
 }

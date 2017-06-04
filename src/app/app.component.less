@@ -1,7 +1,8 @@
 @import "../mixins";
 
 * {
-  transition: ease-in-out, all, .88s;
+  transition: ease all .48s .001s,
+              linear opacity .24s .40s;
 }
 
 .root {
@@ -16,6 +17,8 @@
 
   section.content {
     flex: 0 1;
+    opacity: 0;
+    width: 0; // TODO: workaround for pressing app-nav just after animation started
   }
 }
 
@@ -26,6 +29,8 @@
 
   section.content {
     flex: 1 0;
+    opacity: 1;
+    padding: 16px;
   }
 }
 
@@ -36,6 +41,8 @@
 
     section.content {
       flex: 0;
+      width: initial;
+      margin: 36px 0 0;
     }
   }
 }

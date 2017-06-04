@@ -1,11 +1,64 @@
 <div class="root">
   <div class="container">
-    <h1>
-      Profile
-    </h1>
+    <div class="bio">
+      <h1>
+        Toshinori Tsugita
+      </h1>
+      
+      <div class="job">
+        Application Engineer
+      </div>
 
-    <div class="">
-      Toshinori Tsugita
+      <h2>
+        Experience
+      </h2>
+
+      <ul>
+        <li *ngFor="let expItem of EXPERIENCE_ITEMS">
+          <h3>
+            <span class="title">
+              {{expItem.title}}
+            </span>
+
+            <span class="from-to">
+              {{expItem.from | amDateFormat: 'MMM YYYY'}} - {{expItem.to && expItem.to | amDateFormat: 'MMM YYYY'}}
+            </span>
+          </h3>
+          <div class="description">
+            {{expItem.description}}
+          </div>
+        </li>
+      </ul>
+
+      <h2>
+        Education
+      </h2>
+
+      <ul>
+        <li *ngFor="let eduItem of EDUCATION_ITEMS">
+          <h3>
+            <span class="title">
+              {{eduItem.title}}
+            </span>
+
+            <span class="from-to">
+              {{eduItem.from | amDateFormat: 'MMM YYYY'}} - {{eduItem.to && eduItem.to | amDateFormat: 'MMM YYYY'}}
+            </span>
+          </h3>
+          <div class="description">
+            {{eduItem.description}}
+          </div>
+        </li>
+      </ul>
+
     </div>
+
+    <ul class="social">
+      <li *ngFor="let socialItem of SOCIAL_ITEMS">
+        <a href="{{socialItem.url}}">
+          <img src="{{socialItem.assetPath}}">
+        </a>
+      </li>
+    </ul>
   </div>
 </div>

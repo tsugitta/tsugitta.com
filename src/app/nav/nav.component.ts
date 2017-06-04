@@ -1,7 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
-import { Router, ActivatedRoute } from '@angular/router';
 import { NavigationItem, NAVIGATION_ITEMS } from './navigation-item';
 
 @Component({

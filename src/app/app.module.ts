@@ -3,16 +3,16 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent} from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { NavComponent } from './nav/nav.component';
+import { NavModule } from './nav/nav.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavComponent,
   ],
   imports: [
     AppRoutingModule,
     BrowserModule,
+    NavModule
   ],
   providers: [],
   bootstrap: [AppComponent],
