@@ -1,0 +1,41 @@
+@import "../mixins";
+
+* {
+  transition: ease-in-out, all, .88s;
+}
+
+.root {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+
+  app-nav {
+    flex: 1 0;
+  }
+
+  section.content {
+    flex: 0 1;
+  }
+}
+
+.root.nav-folded {
+  app-nav {
+    flex: 0 1;
+  }
+
+  section.content {
+    flex: 1 0;
+  }
+}
+
+@media screen and (max-width: @mobile-width) {
+  .root.nav-folded {
+    align-items: stretch;
+    flex-direction: column;
+
+    section.content {
+      flex: 0;
+    }
+  }
+}

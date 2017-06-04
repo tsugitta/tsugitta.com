@@ -1,0 +1,29 @@
+<div class="root" [class.folded]="folded">
+  <div class="container">
+    <header>
+      <div class="avatar-container">
+        <a [routerLink]="['/']">
+          <img src="assets/me.jpg" class="avatar">
+        </a>
+      </div>
+
+      <div class="author-container">
+        <span class="author">
+          Toshinori Tsugita
+        </span>
+      </div>
+    </header>
+
+    <nav>
+      <ng-container *ngFor="let navItem of NAVIGATION_ITEMS">
+        <a [routerLink]="[navItem.path]" routerLinkActive="active">
+          <i class="material-icons">{{navItem.materialIconName}}</i>
+          <div class="category-name">
+            {{navItem.displayName}}
+          </div>
+        </a>
+      </ng-container>
+    </nav>
+  </div>
+</div>
+

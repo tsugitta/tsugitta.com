@@ -1,0 +1,161 @@
+@import "../../mixins";
+
+* {
+  transition: ease-in-out, all, .88s;
+}
+
+@folded-menu-item-size: 52px;
+@folded-root-width: 72px;
+
+.root {
+  flex: 1 1;
+  display: flex;
+  height: 100%;
+  padding: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -12%;
+  width: 100%;
+  max-width: 400px;
+}
+
+header {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+  margin: 0 0 12px;
+
+  .avatar-container {
+    a {
+      display: block;
+    }
+
+    .avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
+  }
+
+  .author-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    .author {
+      position: absolute;
+      left: 100px;
+      bottom: 0;
+      font-size: 20px;
+      white-space: nowrap;
+    }
+  }
+}
+
+nav {
+  flex: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+
+  a {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 4px 0;
+    padding: 16px;
+    text-decoration: none;
+    box-shadow: 0px 2px 4px 1px rgba(0,0,0,0.08);
+    border-radius: 2px;
+    background-color: @md-white;
+    overflow-x: hidden;
+    color: @md-dark-text-primary;
+    transition: box-shadow .24s linear,
+                background-color 1.2s linear;
+
+    &:hover {
+      box-shadow: 0px 2px 4px 1px rgba(0,0,0,0.24);
+    }    
+
+    &.active {
+      background-color: @md-orange-300;
+      color: @md-white;
+    }
+
+    i.material-icons {
+      font-size: @font-size-xxlarge;
+      display: block;
+      width: 1em;
+      height: 1em;
+    }
+
+    .category-name {
+      position: absolute;
+      display: block;
+      top: 11px;
+      left: 56px;
+      font-size: 24px;
+    }
+  }
+}
+
+.root&:not(.folded) {
+  header .avatar-container a {
+    pointer-events: none;
+  }
+}
+
+.root.folded {
+  header .avatar-container .avatar {
+    width: @folded-menu-item-size;
+    height: @folded-menu-item-size;
+  }
+}
+
+@media screen and (max-width: @mobile-width) {
+  .root.folded {
+    .container {
+      top: 0;
+      flex-direction: row;
+
+      header {
+        margin: 0;
+
+        .author {
+          display: none;
+          visibility: hidden;
+        }
+      }
+
+      nav {
+        flex-direction: row;
+
+        a { 
+          margin: 0 4px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: @mobile-min-portrait-width) {
+  .root.folded {
+    header .avatar-container .avatar {
+      width: 44px;
+      height: 44px;
+    }
+
+    nav a {
+      padding: 12px;
+    }
+  }
+}

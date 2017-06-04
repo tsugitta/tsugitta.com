@@ -1,7 +1,6 @@
-<!-- TODO: menu -->
-
-<h4>
-  tsugitta's page
-</h4>
-
-🚧 under construction.. 👷
+<div class="root" [class.nav-folded]="!isRoot">
+  <app-nav [folded]="!isRoot"></app-nav>
+  <section class="content">
+    <router-outlet></router-outlet>
+  </section>
+</div>
