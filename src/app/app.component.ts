@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ViewManagerService } from './manager/view-manager.service';
+
+declare var smoothScroll: any;
 
 @Component({
   selector: 'app-root',
@@ -7,6 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   constructor(
+    private viewManager: ViewManagerService,
   ) { }
 
   public get isRoot(): boolean {
@@ -14,7 +18,14 @@ export class AppComponent implements OnInit {
     return window.location.pathname === '/';
   }
 
+  public get showBackToTop(): boolean {
+    return this.viewManager.offset.y > 80;
+  }
+
   ngOnInit() {
   }
 
+  public onPressBackToTop(): void {
+    smoothScroll.animateScroll(0);
+  }
 }

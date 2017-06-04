@@ -4276,6 +4276,10 @@ silent-error@^1.0.0:
   dependencies:
     debug "^2.2.0"
 
+smooth-scroll@^11.1.0:
+  version "11.1.0"
+  resolved "https://registry.yarnpkg.com/smooth-scroll/-/smooth-scroll-11.1.0.tgz#c12aa1c5b4200df9c5b8fd08d91100f16b55174b"
+
 sntp@1.x.x:
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/sntp/-/sntp-1.0.9.tgz#6541184cc90aeea6c6e7b35e2659082443c66198"

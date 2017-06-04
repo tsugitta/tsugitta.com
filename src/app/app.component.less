@@ -34,6 +34,32 @@
   }
 }
 
+.back-to-top {
+  position: fixed;
+  right: 12px;
+  bottom: 12px;
+
+  width: 44px;
+  height: 44px;
+
+  border: 0;
+  border-radius: 50%;
+  box-shadow: 0px 2px 4px 1px rgba(0,0,0,0.08);
+  background-color: @md-white;
+  transform: scale(0);
+
+  i {
+    // workaround for mobile safari's center-alignment. belows don't work.
+    // text-align: center
+    // use flex & set justfy-content, align-items to center
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    transform: rotate(360deg);
+    font-size: 24px;
+  }
+}
+
 @media screen and (max-width: @mobile-width) {
   .root.nav-folded {
     align-items: stretch;
@@ -42,7 +68,15 @@
     section.content {
       flex: 0;
       width: initial;
-      margin: 36px 0 0;
+      margin: 20px 0 0;
+    }
+  }
+
+  .back-to-top.shown {
+    transform: scale(1);
+
+    i {
+      transform: rotate(0);
     }
   }
 }

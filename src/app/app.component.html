@@ -4,3 +4,9 @@
     <router-outlet></router-outlet>
   </section>
 </div>
+
+<button class="back-to-top" [class.shown]="showBackToTop" (click)="onPressBackToTop()">
+  <i class="material-icons">
+    expand_less
+  </i>
+</button>
