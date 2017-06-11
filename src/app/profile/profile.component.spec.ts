@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { MomentModule } from 'angular2-moment';
 
 import { ProfileComponent } from './profile.component';
 
@@ -8,7 +9,8 @@ describe('ProfileComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ProfileComponent ],
+      imports: [MomentModule],
+      declarations: [ProfileComponent],
     })
     .compileComponents();
   }));

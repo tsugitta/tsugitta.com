@@ -1,6 +1,10 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { async, fakeAsync, ComponentFixture, TestBed, tick } from '@angular/core/testing';
+import { Router } from '@angular/router';
+import { RouterTestingModule } from '@angular/router/testing';
+import { By } from '@angular/platform-browser';
+import { DebugElement } from '@angular/core';
 import { NavComponent } from './nav.component';
+import { routes } from '../app-routing.module';
 
 describe('NavComponent', () => {
   let component: NavComponent;
@@ -8,7 +12,8 @@ describe('NavComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NavComponent ],
+      imports: [RouterTestingModule],
+      declarations: [NavComponent],
     })
     .compileComponents();
   }));
@@ -21,5 +26,21 @@ describe('NavComponent', () => {
 
   it('should be created', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should show nav items with correct path', () => {
+    const navLinkCategoryNameTags = fixture.debugElement.queryAll(By.css('nav a .category-name'));
+    const categoryNames = navLinkCategoryNameTags.map(navLink => navLink.nativeElement.innerText);
+    expect(categoryNames).toEqual([
+      'Profile',
+      'Contributions (WIP)',
+      'Diary (WIP)']);
+
+    const hrefs = fixture.debugElement.queryAll(By.css('nav a')).map(el => el.nativeElement.getAttribute('href'));
+    expect(hrefs).toEqual([
+      '/profile',
+      '/contributions',
+      '/diaries',
+    ]);
   });
 });

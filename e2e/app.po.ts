@@ -5,7 +5,7 @@ export class TsugittaCorporatePage {
     return browser.get('/');
   }
 
-  getParagraphText() {
-    return element(by.css('app-root h1')).getText();
+  getAuthorName() {
+    return element(by.css('.author-container .author')).getText();
   }
 }

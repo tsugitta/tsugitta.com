@@ -7,10 +7,10 @@ describe('tsugitta-corporate App', () => {
     page = new TsugittaCorporatePage();
   });
 
-  it('should display welcome message', done => {
+  it('should display welcome title', done => {
     page.navigateTo();
-    page.getParagraphText()
-      .then(msg => expect(msg).toEqual('Welcome to app!!'))
+    page.getAuthorName()
+      .then(msg => expect(msg).toEqual('Toshinori Tsugita'))
       .then(done, done.fail);
   });
 });
