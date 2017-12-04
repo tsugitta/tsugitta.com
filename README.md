@@ -1,1 +1,1 @@
-waiting for you at https://tsugitta.github.io :wink:
+waiting for you at https://tsugitta.com :wink:
