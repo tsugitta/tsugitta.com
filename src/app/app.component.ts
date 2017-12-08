@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ViewManagerService } from './manager/view-manager.service';
 
-declare var smoothScroll: any;
+declare var SmoothScroll: any;
 
 @Component({
   selector: 'app-root',
@@ -26,6 +26,7 @@ export class AppComponent implements OnInit {
   }
 
   public onPressBackToTop(): void {
-    smoothScroll.animateScroll(0);
+    const scroll = new SmoothScroll();
+    scroll.animateScroll(0);
   }
 }
