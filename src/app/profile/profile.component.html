@@ -21,7 +21,7 @@
             </span>
 
             <span class="from-to">
-              {{expItem.from | amDateFormat: 'MMM YYYY'}} - {{expItem.to && expItem.to | amDateFormat: 'MMM YYYY'}}
+              {{expItem.from | toMMMYYYY}} - {{expItem.to | toMMMYYYY}}
             </span>
           </h3>
           <div class="description">
@@ -42,7 +42,7 @@
             </span>
 
             <span class="from-to">
-              {{eduItem.from | amDateFormat: 'MMM YYYY'}} - {{eduItem.to && eduItem.to | amDateFormat: 'MMM YYYY'}}
+              {{eduItem.from | toMMMYYYY}} - {{eduItem.to | toMMMYYYY}}
             </span>
           </h3>
           <div class="description">
