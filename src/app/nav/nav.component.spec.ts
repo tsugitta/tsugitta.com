@@ -34,13 +34,13 @@ describe('NavComponent', () => {
     expect(categoryNames).toEqual([
       'Profile',
       'Contributions (WIP)',
-      'Diary (WIP)']);
+      'Products (WIP)']);
 
     const hrefs = fixture.debugElement.queryAll(By.css('nav a')).map(el => el.nativeElement.getAttribute('href'));
     expect(hrefs).toEqual([
       '/profile',
       '/contributions',
-      '/diaries',
+      '/products',
     ]);
   });
 });
