@@ -37,8 +37,8 @@ export class ViewManagerService {
   setScreenSize(): void {
     const self = this;
 
-    self.screen.width = window.innerWidth || document.documentElement.clientWidth || 0;
-    self.screen.height = window.innerHeight || document.documentElement.clientHeight || 0;
+    self.screen.width = window.innerWidth || (document.documentElement && document.documentElement.clientWidth) || 0;
+    self.screen.height = window.innerHeight || (document.documentElement && document.documentElement.clientHeight) || 0;
   }
 
   setPageOffset(): void {
