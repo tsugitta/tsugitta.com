@@ -16,4 +16,10 @@ export const SOCIAL_ITEMS: SocialItem[] = [
     url: 'https://twitter.com/tsugitta',
     assetPath: '/assets/social/twitter-icon.png',
   },
+
+  {
+    identifier: `Hatena Blog`,
+    url: 'https://tsugitta.hatenablog.com',
+    assetPath: '/assets/social/hatenablog-icon.png',
+  },
 ];
