@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ExperienceItem, TO_DESC_EXPERIENCE_ITEMS } from './experience-item';
-import { EducationItem, TO_DESC_EDUCATION_ITEMS } from './education-item';
+import { ExperienceItem, EXPERIENCE_ITEMS} from './experience-item';
+import { EducationItem, EDUCATION_ITEMS} from './education-item';
+import { compare} from './compare'
 import { SocialItem, SOCIAL_ITEMS } from './social-item';
 
 @Component({
@@ -9,8 +10,8 @@ import { SocialItem, SOCIAL_ITEMS } from './social-item';
   styleUrls: ['./profile.component.less'],
 })
 export class ProfileComponent implements OnInit {
-  public EXPERIENCE_ITEMS: ExperienceItem[] = TO_DESC_EXPERIENCE_ITEMS;
-  public EDUCATION_ITEMS: EducationItem[] = TO_DESC_EDUCATION_ITEMS;
+  public EXPERIENCE_ITEMS: ExperienceItem[] = EXPERIENCE_ITEMS.sort(compare);
+  public EDUCATION_ITEMS: EducationItem[] = EDUCATION_ITEMS.sort(compare);
   public SOCIAL_ITEMS: SocialItem[] = SOCIAL_ITEMS;
 
   constructor() { }

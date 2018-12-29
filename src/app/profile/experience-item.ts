@@ -41,22 +41,3 @@ export const EXPERIENCE_ITEMS: ExperienceItem[] = [
     description: `Developing extremely innovating medical app with RoR, ReactNative(Redux), & Angular.`,
   },
 ];
-
-export const TO_DESC_EXPERIENCE_ITEMS = EXPERIENCE_ITEMS.sort((a, b) => {
-  if (a.to === null && b.to !== null && 1) {
-    return -1;
-  }
-
-  if (b.to === null && a.to !== null && 1) {
-    return 1;
-  }
-
-  if (a.to === null && b.to === null) {
-    return a.from.getTime() > b.from.getTime() ? -1 : 1;
-  }
-
-  const aToTime = (<Date> a.to).getTime();
-  const bToTime = (<Date> b.to).getTime();
-
-  return aToTime > bToTime ? -1 : 1;
-});
