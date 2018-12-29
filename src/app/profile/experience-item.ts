@@ -38,6 +38,13 @@ export const EXPERIENCE_ITEMS: ExperienceItem[] = [
     title: `MICIN Inc.`,
     from: new Date('2016-03-01'),
     to: null,
-    description: `Developing extremely innovating medical app with RoR, ReactNative(Redux), & Angular.`,
+    description: `Developing extremely innovating medical apps with Go, Angular, React Native, RoR, and so on.`,
+  },
+
+  {
+    title: `Tink Inc.`,
+    from: new Date('2017-05-01'),
+    to: null,
+    description: `Advisor / Developer. Developing apps using React Native, RoR. Intoroduced CI / CD, GKE, and so on.`,
   },
 ];
