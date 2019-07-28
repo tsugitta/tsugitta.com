@@ -18,8 +18,8 @@ export const SOCIAL_ITEMS: SocialItem[] = [
   },
 
   {
-    identifier: `Hatena Blog`,
-    url: 'https://tsugitta.hatenablog.com',
-    assetPath: '/assets/social/hatenablog-icon.png',
+    identifier: `Blog`,
+    url: 'https://blog.tsugitta.com',
+    assetPath: '/assets/social/hatenablog-icon.png', // sorry for using the icon even though the blog isn't related to hatena..
   },
 ];
