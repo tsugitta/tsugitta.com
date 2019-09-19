@@ -22,4 +22,16 @@ export const SOCIAL_ITEMS: SocialItem[] = [
     url: 'https://blog.tsugitta.com',
     assetPath: '/assets/social/hatenablog-icon.png', // sorry for using the icon even though the blog isn't related to hatena..
   },
+
+  {
+    identifier: `Scrapbox`,
+    url: 'https://scrapbox.io/tsugitta',
+    assetPath: '/assets/social/scrapbox-icon.png',
+  },
+
+  {
+    identifier: `AtCoder`,
+    url: 'https://atcoder.jp/users/tsugitta',
+    assetPath: '/assets/social/atcoder-icon.png',
+  },
 ];
