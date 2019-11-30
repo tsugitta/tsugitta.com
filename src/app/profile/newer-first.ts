@@ -3,7 +3,7 @@ interface Item {
   to: Date | null;
 }
 
-export const compare = (a: Item, b: Item): number => {
+export const newerFirst = (a: Item, b: Item): number => {
   if (a.to === null && b.to !== null) {
     return -1;
   }

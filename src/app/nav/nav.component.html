@@ -15,7 +15,7 @@
     </header>
 
     <nav>
-      <ng-container *ngFor="let navItem of NAVIGATION_ITEMS">
+      <ng-container *ngFor="let navItem of navigationItems">
         <a [routerLink]="[navItem.path]" routerLinkActive="active">
           <i class="material-icons">{{navItem.materialIconName}}</i>
           <div class="category-name">

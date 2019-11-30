@@ -1,7 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import 'rxjs/add/operator/map';
-import { Observable } from 'rxjs/Observable';
-import { NAVIGATION_ITEMS, NavigationItem } from './navigation-item';
+import { navigationItems } from './navigation-item';
 
 @Component({
   selector: 'app-nav',
@@ -10,7 +9,7 @@ import { NAVIGATION_ITEMS, NavigationItem } from './navigation-item';
 })
 export class NavComponent implements OnInit {
   @Input() folded: boolean;
-  public NAVIGATION_ITEMS = NAVIGATION_ITEMS;
+  public navigationItems = navigationItems;
 
   ngOnInit() {}
 }

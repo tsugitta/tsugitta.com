@@ -5,7 +5,7 @@ export interface ExperienceItem {
   description: string;
 }
 
-export const EXPERIENCE_ITEMS: ExperienceItem[] = [
+export const experienceItems: ExperienceItem[] = [
   {
     title: `Livesense Inc.`,
     from: new Date('2014-02-01'),

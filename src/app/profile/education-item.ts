@@ -5,7 +5,7 @@ export interface EducationItem {
   description: string;
 }
 
-export const EDUCATION_ITEMS: EducationItem[] = [
+export const educationItems: EducationItem[] = [
   {
     title: `The univ. of Tokyo`,
     from: new Date('2013-04-01'),

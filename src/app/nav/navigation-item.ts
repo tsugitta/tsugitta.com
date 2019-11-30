@@ -4,7 +4,7 @@ export interface NavigationItem {
   materialIconName: string;
 }
 
-export const NAVIGATION_ITEMS: NavigationItem[] = [
+export const navigationItems: NavigationItem[] = [
   {
     displayName: `Profile`,
     path: 'profile',
