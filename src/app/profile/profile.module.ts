@@ -1,19 +1,12 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 
-import { ProfileComponent } from './profile.component';
+import { AppCommonModule } from 'app/common/common.module';
 import { ProfileRoutingModule } from './profile-routing.module';
-
-import { ToMMMYYYYPipe } from './to-mmm-yyyy.pipe';
+import { ProfileComponent } from './profile.component';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    ProfileRoutingModule,
-  ],
-  declarations: [
-    ProfileComponent,
-    ToMMMYYYYPipe,
-  ],
+  imports: [CommonModule, ProfileRoutingModule, AppCommonModule],
+  declarations: [ProfileComponent],
 })
-export class ProfileModule { }
+export class ProfileModule {}
