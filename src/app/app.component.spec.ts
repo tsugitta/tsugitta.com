@@ -1,9 +1,9 @@
-import { TestBed, async } from '@angular/core/testing';
-import { Router, ActivatedRoute } from '@angular/router';
+import { async, TestBed } from '@angular/core/testing';
+import { ActivatedRoute, Router } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
 
-import { NavModule } from './nav/nav.module';
 import { ManagerModule } from './manager/manager.module';
+import { NavModule } from './nav/nav.module';
 
 import { AppComponent } from './app.component';
 
@@ -11,9 +11,7 @@ describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [NavModule, ManagerModule, RouterTestingModule],
-      declarations: [
-        AppComponent,
-      ],
+      declarations: [AppComponent],
     }).compileComponents();
   }));
 

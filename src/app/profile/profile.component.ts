@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ExperienceItem, EXPERIENCE_ITEMS} from './experience-item';
-import { EducationItem, EDUCATION_ITEMS} from './education-item';
-import { compare} from './compare'
-import { SocialItem, SOCIAL_ITEMS } from './social-item';
+import { compare } from './compare';
+import { EDUCATION_ITEMS, EducationItem } from './education-item';
+import { EXPERIENCE_ITEMS, ExperienceItem } from './experience-item';
+import { SOCIAL_ITEMS, SocialItem } from './social-item';
 
 @Component({
   selector: 'app-profile',
@@ -14,9 +14,7 @@ export class ProfileComponent implements OnInit {
   public EDUCATION_ITEMS: EducationItem[] = EDUCATION_ITEMS.sort(compare);
   public SOCIAL_ITEMS: SocialItem[] = SOCIAL_ITEMS;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

@@ -9,9 +9,7 @@ declare var SmoothScroll: any;
   styleUrls: ['./app.component.less'],
 })
 export class AppComponent implements OnInit {
-  constructor(
-    private viewManager: ViewManagerService,
-  ) { }
+  constructor(private viewManager: ViewManagerService) {}
 
   public get isRoot(): boolean {
     // Router's url isn't resolved just after visited, so use window.location.pathname
@@ -22,8 +20,7 @@ export class AppComponent implements OnInit {
     return this.viewManager.offset.y > 80;
   }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   public onPressBackToTop(): void {
     const scroll = new SmoothScroll();
