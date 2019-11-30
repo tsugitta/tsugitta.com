@@ -1,0 +1,61 @@
+@import "../../mixins";
+
+.root {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: scroll;
+}
+
+.container {
+  padding: 16px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin: 0 0 18px 8px;
+
+    .date {
+      color: @md-grey-600;
+      font-size: 13px;
+    }
+
+    .gh-item {
+      margin: 4px 0 0;
+      display: flex;
+      flex-direction: row;
+
+      .icon {
+        min-width: 18px;
+        flex-shrink: 1;
+      }
+
+      .desc {
+        margin-left: 12px;
+
+        .repo {
+          font-weight: 600;
+          font-size: 14px;
+        }
+
+        .title {
+          display: block;
+          margin: 2px 0 0;
+          color: #007acc;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: @mobile-width) {
+  .root {
+    height: unset;
+  }
+}

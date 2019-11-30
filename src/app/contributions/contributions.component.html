@@ -1,0 +1,27 @@
+<div class="root">
+  <div class="container">
+    <ul>
+      <li *ngFor="let contribution of contributions">
+        <div class="date">
+          {{contribution.date | toMMMYYYY}}
+        </div>
+
+        <div class="gh-item">
+          <div class="icon">
+            <app-github-icon [type]="contribution.type"></app-github-icon>
+          </div>
+
+          <div class="desc">
+            <div class="repo">
+              {{contribution.url | urlToRepository}}
+            </div>
+
+            <a class="title" [href]="contribution.url">
+              {{contribution.title}}
+            </a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

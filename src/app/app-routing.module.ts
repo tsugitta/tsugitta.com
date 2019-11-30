@@ -1,9 +1,22 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
 export const routes: Routes = [
   { path: '', children: [], pathMatch: 'full' },
-  { path: 'profile', loadChildren: () => import('./profile/profile.module').then(m => m.ProfileModule), pathMatch: 'full' },
+  {
+    path: 'profile',
+    loadChildren: () =>
+      import('./profile/profile.module').then(m => m.ProfileModule),
+    pathMatch: 'full',
+  },
+  {
+    path: 'contributions',
+    loadChildren: () =>
+      import('./contributions/contributions.module').then(
+        m => m.ContributionsModule,
+      ),
+    pathMatch: 'full',
+  },
 
   { path: '**', redirectTo: '/' },
 ];
@@ -12,6 +25,4 @@ export const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-
-
-export class AppRoutingModule { }
+export class AppRoutingModule {}

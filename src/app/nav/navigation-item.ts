@@ -11,7 +11,7 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
     materialIconName: 'person',
   },
   {
-    displayName: `Contributions (WIP)`,
+    displayName: `Contributions`,
     path: 'contributions',
     materialIconName: 'timeline',
   },
