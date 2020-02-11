@@ -1,16 +1,15 @@
 @import "../../mixins";
 
 .root {
+  height: 100%;
   flex-grow: 1;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
   overflow: scroll;
 }
 
 .container {
-  padding: 16px;
+  margin: auto;
+  padding: 28px;
 }
 
 ul {
@@ -56,6 +55,10 @@ ul {
 
 @media screen and (max-width: @mobile-width) {
   .root {
-    height: unset;
+    max-height: unset;
+  }
+
+  .container {
+    padding: 16px;
   }
 }
