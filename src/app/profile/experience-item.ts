@@ -47,4 +47,11 @@ export const experienceItems: ExperienceItem[] = [
     to: null,
     description: `Developing extremely innovating medical apps with Go, Angular, React Native, RoR, and so on.`,
   },
+
+  {
+    title: `dinii Inc.`,
+    from: new Date('2020-01-01'),
+    to: null,
+    description: `Developing wonderful apps using NestJS, React, GCP etc.`,
+  },
 ];
