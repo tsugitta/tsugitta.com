@@ -38,7 +38,7 @@ export const experienceItems: ExperienceItem[] = [
     title: `Tink Inc.`,
     from: new Date('2017-05-01'),
     to: new Date('2019-06-30'),
-    description: `Advisor / Developer. Developing apps using React Native, RoR. Intoroduced CI / CD, GKE, and so on.`,
+    description: `Advisor / Developer. Developed apps using React Native, RoR. Intoroduced CI / CD, GKE, and so on.`,
   },
 
   {
