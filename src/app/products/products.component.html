@@ -1,0 +1,27 @@
+<div class="root">
+  <div class="container">
+    <ul>
+      <li *ngFor="let product of products">
+        <h3>
+          <span class="title">
+            {{product.title}}
+          </span>
+
+          <span class="date">
+            {{product.date| toMMMYYYY}}
+          </span>
+        </h3>
+
+        <div class="content">
+          <a href="{{product.url}}" class="link">
+            {{product.url}}
+          </a>
+
+          <div class="description">
+            {{product.description}}
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

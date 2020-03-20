@@ -16,7 +16,7 @@ export const navigationItems: NavigationItem[] = [
     materialIconName: 'timeline',
   },
   {
-    displayName: `Products (WIP)`,
+    displayName: `Products`,
     path: 'products',
     materialIconName: 'music_note',
   },
