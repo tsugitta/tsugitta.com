@@ -1,0 +1,27 @@
+<div class="root">
+  <div class="container">
+    <ul>
+      <li *ngFor="let work of works">
+        <h3>
+          <span class="title">
+            {{work.title}}
+          </span>
+
+          <span class="date">
+            {{work.date| toMMMYYYY}}
+          </span>
+        </h3>
+
+        <div class="content">
+          <a href="{{work.url}}" class="link">
+            {{work.url}}
+          </a>
+
+          <div class="description">
+            {{work.description}}
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

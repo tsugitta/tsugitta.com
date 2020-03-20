@@ -40,15 +40,11 @@ describe('NavComponent', () => {
     const categoryNames = navLinkCategoryNameTags.map(
       navLink => navLink.nativeElement.innerText,
     );
-    expect(categoryNames).toEqual([
-      'Profile',
-      'Contributions',
-      'Products (WIP)',
-    ]);
+    expect(categoryNames).toEqual(['Profile', 'Contributions', 'Works']);
 
     const hrefs = fixture.debugElement
       .queryAll(By.css('nav a'))
       .map(el => el.nativeElement.getAttribute('href'));
-    expect(hrefs).toEqual(['/profile', '/contributions', '/products']);
+    expect(hrefs).toEqual(['/profile', '/contributions', '/works']);
   });
 });
