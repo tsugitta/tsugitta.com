@@ -34,4 +34,10 @@ export const SOCIAL_ITEMS: SocialItem[] = [
     url: 'https://atcoder.jp/users/tsugitta',
     assetPath: '/assets/social/atcoder-icon.png',
   },
+
+  {
+    identifier: `LeetCode`,
+    url: 'https://leetcode.com/tsugitta/',
+    assetPath: '/assets/social/leetcode-icon.png',
+  },
 ];
