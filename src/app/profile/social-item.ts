@@ -24,6 +24,12 @@ export const SOCIAL_ITEMS: SocialItem[] = [
   },
 
   {
+    identifier: `Zenn`,
+    url: 'https://zenn.dev/tsugitta',
+    assetPath: '/assets/social/zenn.svg'
+  },
+
+  {
     identifier: `Scrapbox`,
     url: 'https://scrapbox.io/tsugitta',
     assetPath: '/assets/social/scrapbox-icon.png',
