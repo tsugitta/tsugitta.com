@@ -31,21 +31,21 @@ export const experienceItems: ExperienceItem[] = [
     title: `Smarby Inc.`,
     from: new Date('2016-01-01'),
     to: new Date('2016-12-31'),
-    description: `Developed a babies' cute clothing EC app with RoR & Swift`,
+    description: `Developed a babies' cute clothing EC app with Ruby on Rails & Swift`,
   },
 
   {
     title: `Tink Inc.`,
     from: new Date('2017-05-01'),
     to: new Date('2019-06-30'),
-    description: `Advisor / Developer. Developed apps using React Native, RoR. Intoroduced CI / CD, GKE, and so on.`,
+    description: `Advisor / Developer. Developed apps using React Native, Ruby on Rails. Intoroduced CI / CD, GKE, and so on.`,
   },
 
   {
     title: `MICIN Inc.`,
     from: new Date('2016-03-01'),
     to: null,
-    description: `Developing extremely innovating medical apps with Go, Angular, React Native, RoR, and so on.`,
+    description: `Developing extremely innovating medical apps with GraphQL, Next.js, React Native, Ruby on Rails, and so on.`,
   },
 
   {
