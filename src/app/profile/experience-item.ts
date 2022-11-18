@@ -52,6 +52,6 @@ export const experienceItems: ExperienceItem[] = [
     title: `dinii Inc.`,
     from: new Date('2020-01-01'),
     to: null,
-    description: `Developing wonderful apps using Hasura, Apollo, React, NestJS, etc.`,
+    description: `Developing wonderful apps using Hasura, React, NestJS, etc.`,
   },
 ];
