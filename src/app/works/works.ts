@@ -14,7 +14,6 @@ export const works: Contribution[] = [
     url: 'https://github.com/tsugitta/create-index',
     description: 'A VS Code extension to manage index.ts (index.js) easily',
   },
-
   {
     title: 'redux-observable-rn-alert',
     date: '2018-05-01',
@@ -22,19 +21,23 @@ export const works: Contribution[] = [
     description:
       'A library to use Alert.alert() with a side-effect in a react-native app using redux & redux-observable.',
   },
-
   {
     title: 'Kiokuzan',
     date: '2020-03-20',
     url: 'https://kiokuzan.app',
     description: 'A simple web game that trains your working memory',
   },
-
   {
     title: 'AtCoder judge notifier',
     date: '2020-03-27',
     url: 'https://github.com/tsugitta/atcoder-judge-notifier',
     description:
       'A Chrome extension to notify the result of the submission on AtCoder',
+  },
+  {
+    title: 'JAPAN/MARC parser',
+    date: '2023-01-07',
+    url: 'https://github.com/tsugitta/japan-marc-parser',
+    description: 'A parser & crawler implementation for JAPAN/MARC',
   },
 ];
