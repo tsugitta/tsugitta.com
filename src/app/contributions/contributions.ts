@@ -97,15 +97,14 @@ export const contributions: Contribution[] = [
   },
   {
     title: 'feat: allow to re-patch DataSource & Repository',
-    type: 'PR',
+    type: 'MergedPR',
     date: '2022-12-26',
     url: 'https://github.com/Aliheym/typeorm-transactional/pull/23',
   },
   {
-    title:
-      '@Transactional({ connectionName }) does not switch repositories injected by NestJS',
-    type: 'Issue',
-    date: '2023-01-04',
-    url: 'https://github.com/Aliheym/typeorm-transactional/issues/24',
+    title: 'refactor: remove unnecessary patch',
+    type: 'PR',
+    date: '2023-01-23',
+    url: 'https://github.com/Aliheym/typeorm-transactional/pull/29',
   },
 ];
