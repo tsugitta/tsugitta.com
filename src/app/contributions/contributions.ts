@@ -91,7 +91,7 @@ export const contributions: Contribution[] = [
   },
   {
     title: 'fix: correct Cell prop types when used with beforeQuery',
-    type: 'PR',
+    type: 'MergedPR',
     date: '2022-12-09',
     url: 'https://github.com/redwoodjs/redwood/pull/7063',
   },
