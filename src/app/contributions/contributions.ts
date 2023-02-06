@@ -67,7 +67,7 @@ export const contributions: Contribution[] = [
   },
   {
     title: "Can't use LessThan for Union field",
-    type: 'Issue',
+    type: 'ClosedIssue',
     date: '2022-06-27',
     url: 'https://github.com/typeorm/typeorm/issues/9152',
   },
@@ -85,7 +85,7 @@ export const contributions: Contribution[] = [
   },
   {
     title: 'fix: allow FindOptionsWhere to accept LessThan with Union',
-    type: 'PR',
+    type: 'MergedPR',
     date: '2022-12-08',
     url: 'https://github.com/typeorm/typeorm/pull/9607',
   },
