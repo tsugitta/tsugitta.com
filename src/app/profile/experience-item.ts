@@ -44,7 +44,7 @@ export const experienceItems: ExperienceItem[] = [
   {
     title: `MICIN Inc.`,
     from: new Date('2016-03-01'),
-    to: null,
+    to: new Date('2023-06-30'),
     description: `Developing extremely innovating medical apps with GraphQL, Next.js, React Native, Ruby on Rails, and so on.`,
   },
 
