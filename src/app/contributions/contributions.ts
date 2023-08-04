@@ -107,4 +107,10 @@ export const contributions: Contribution[] = [
     date: '2023-01-23',
     url: 'https://github.com/Aliheym/typeorm-transactional/pull/29',
   },
+  {
+    title: 'Multiple @JoinColumn with same name interferes with each other',
+    type: 'Issue',
+    date: '2023-07-29',
+    url: 'https://github.com/typeorm/typeorm/issues/10240',
+  },
 ];
