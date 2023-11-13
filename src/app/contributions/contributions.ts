@@ -103,7 +103,7 @@ export const contributions: Contribution[] = [
   },
   {
     title: 'refactor: remove unnecessary patch',
-    type: 'PR',
+    type: 'MergedPR',
     date: '2023-01-23',
     url: 'https://github.com/Aliheym/typeorm-transactional/pull/29',
   },
