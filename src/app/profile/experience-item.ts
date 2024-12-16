@@ -54,4 +54,11 @@ export const experienceItems: ExperienceItem[] = [
     to: null,
     description: `Developing wonderful apps using Hasura, React, NestJS, etc.`,
   },
+
+  {
+    title: `Freelance`,
+    from: new Date('2023-07-01'),
+    to: null,
+    description: `Getting up to all sorts of stuff with all sorts of people. (Ask me anything!)`,
+  },
 ];
